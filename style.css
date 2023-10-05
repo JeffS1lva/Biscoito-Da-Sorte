@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  background-repeat: no-repeat;
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+  font-size: 62.5%;
+}
+
+#screen1 {
+  margin: auto;
+  display: flex;
+  width: 27rem;
+  height: 27rem;
+  text-align: center;
+  margin-top: 9rem;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  padding: 2.8rem 2.8rem;
+  background-color: #ffffff;
+  animation:shake-horizontal;
+  box-shadow: 10px 10px 10px black;
+}
+
+#screen1 h1 {
+  width: 15rem;
+  margin: 0 auto;
+  color: #34355b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+#screen1 p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  color: #34355b;
+}
+
+#screen1 img {
+  width: 70%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.screen2 {
+  margin: auto;
+  height: 34rem;
+  width: 27rem;
+  margin-top: 5rem;
+  border-radius: 0.8rem;
+  padding: 3rem 4.8rem;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 10px black;
+}
+
+.screen2 strong {
+  width: 18rem;
+  display: flex;
+  margin: 0 auto;
+  color: #34355b;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.box {
+  margin: auto;
+  width: fit-content;
+  width: 19rem;
+  height: 6.8rem;
+  text-align: center;
+  padding: 1rem 1.9rem;
+  margin-top: 1rem;
+  background-color: #e4edf1;
+  animation: subir 2s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+.box span {
+  font-family: "Roteiro Dançante", cursive;
+  animation:subir 2s ease-in-out;
+  
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.screen2 img {
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  height: 3rem;
+  width: 10rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 0.4rem;
+  background-color: #ff9500;
+  font-family: "DM Sans", sans-serif;
+}
+
+
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
+
+/* Aplicando a animação */
+#clickNext {
+  animation: shake-horizontal 2s ease-in-out infinite; /* Nome da animação, duração, easing e repetição */
+}
+
+
+#clickNext {
+  transition: transform 0.5s ease-in-out; /* Propriedade, duração e easing */
+}
+
+#clickNext:hover {
+  transform: translateX(100px); /* Quando o elemento é:hover, ele se move 100 pixels para a direita */
+}
+
+#clickNext {
+  transform: translateX(100px); /* Move o elemento 100 pixels para a direita */
+  transition: transform 0.5s ease-in-out; /* Adiciona uma transição suave */
+}
+
+/* Aplicando animação texto */
+@keyframes subir {
+  0% {
+    width: 50px;
+    height: 30px;
+    transform: translateY(150px); /* Começa na posição inicial */
+  }
+  
+}
+
+/* Responsividade */
+@media  (max-width:700px)  {
+  #screen1{
+    width: 100%;
+    height: 100%;
+    margin-top: 40%;
+    border: 1px solid red;
+  }
+
+  #screen1 img{
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  .screen2{
+   width: 100%;
+   height: 100%;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
