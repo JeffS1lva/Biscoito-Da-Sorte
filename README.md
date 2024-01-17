@@ -10,4 +10,4 @@ eles definimos callbacks, funções, animações css, estrutura html, manipulaç
  - FIGMA
  - GIT
  - GITHUB
-# Aberto a criticas e a Melhorias!
+
